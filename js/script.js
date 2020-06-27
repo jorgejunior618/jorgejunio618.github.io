@@ -1,19 +1,4 @@
-const list = document.querySelectorAll('.content ul li');
-let counter = 0;
-let aux = 'asc';
+import Animations from './modules/animations.js';
 
-setInterval(() => {
-  if(counter <= 20 && aux === 'asc') {
-    counter += 1;
-    for(item of list) {
-      item.style.top = counter + 'px';
-    }
-    if (counter >= 16) aux = 'dec';
-  } else {
-    counter -= 1;
-    for(item of list) {
-      item.style.top = counter + 'px';
-    }
-    if (counter <= 0) aux = 'asc';
-  }
-}, 80);
+Animations.initialPresentation();
+Animations.floatingCards();
