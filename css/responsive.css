@@ -1,0 +1,11 @@
+@media (max-width: 450px) {
+  .content ul li #profile-data {
+    height: 200px;
+  }
+
+  .content ul li #profile-data div {
+    flex: 1;
+    display: flex;
+    align-items: center;
+  }
+}
