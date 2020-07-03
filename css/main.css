@@ -1,5 +1,6 @@
 body {
   background-color: #474754;
+  font-family: 'Oxygen', sans-serif;
 }
 
 * {
@@ -15,6 +16,30 @@ a {
 
 li {
   list-style: none;
+}
+
+#info-dev, #credits {
+  color: #fff5;
+  position: absolute;
+  z-index: 20;
+}
+
+#info-dev {
+  color: #fff2;
+  font-size: 24px;
+  text-align: center;
+  top: 5px;
+  left: 0;
+  right: 0;
+}
+
+#credits {
+  bottom: 7px;
+  left: 10vw;
+}
+
+#credits a {
+  padding: 7px 0;
 }
 
 

@@ -1,4 +1,35 @@
-@media (max-width: 450px) {
+@media (max-width: 700px) {
+  .content ul {
+    display: block;
+  }
+  .content ul li {
+    margin: 5vh auto;
+    height: 75vh;
+    padding: 25px 10px;
+  }
+
+  .content ul #arrow {
+    display: block;
+    font-size: 30px;
+    margin: 0;
+    position: absolute;
+    bottom: 50px;
+    left: 11vw;
+    
+    background-color: #2f2f2f;
+    padding: 5px 50px;
+    border-radius: 10px;
+  }
+
+  .content ul #arrow.rigth {
+    left: unset;
+    right: 11vw;
+  }
+
+  .content ul li #profile-data h2 {
+    font-size: 28px;
+  }
+
   .content ul li #profile-data {
     height: 200px;
   }
@@ -7,5 +38,32 @@
     flex: 1;
     display: flex;
     align-items: center;
+  }
+}
+
+@media (max-height: 590px) {
+  .content ul li img#profile {
+    width: 70px;
+  }
+
+  .content ul li #profile-data {
+    height: 150px;
+  }
+
+  .content ul li #profile-data h2 {
+    font-size: 25px;
+  }
+
+  .content ul li #profile-data p {
+    font-size: 14px;
+  }
+
+  .content ul li #profile-data strong {
+    font-size: 16px;
+  }
+
+  .content ul #arrow {
+    bottom: 30px;
+    padding: 5px 40px;
   }
 }
