@@ -41,7 +41,7 @@
   }
 }
 
-@media (max-height: 590px) {
+@media (max-height: 600px) {
   .content ul li img#profile {
     width: 70px;
   }
