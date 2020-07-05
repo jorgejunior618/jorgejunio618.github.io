@@ -2,7 +2,7 @@
   .content ul {
     display: block;
   }
-  .content ul li {
+  .content ul li.card {
     margin: 5vh auto;
     height: 75vh;
     padding: 25px 10px;
@@ -14,16 +14,16 @@
     margin: 0;
     position: absolute;
     bottom: 50px;
-    left: 11vw;
+    left: 9vw;
     
     background-color: #2f2f2f;
     padding: 5px 50px;
     border-radius: 10px;
   }
 
-  .content ul #arrow.rigth {
+  .content ul #arrow.right {
     left: unset;
-    right: 11vw;
+    right: 9vw;
   }
 
   .content ul li #profile-data h2 {
@@ -41,8 +41,8 @@
   }
 }
 
-@media (max-height: 650px) {
-  .content ul li {
+@media (max-height: 639px) {
+  .content ul li.card {
     height: 67vh
   }
   .content ul li img#profile {
@@ -68,5 +68,32 @@
   .content ul #arrow {
     bottom: 45px;
     padding: 5px 50px;
+  }
+
+  .content ul li.info #profile-data img {
+    display: none;
+  }
+
+  .content ul li.info #profile-data dt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .content ul li.info #profile-data dt span {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+  }
+
+  .content ul li.info #profile-data dt#backend span {
+    background: url('../assets/back-end.png') no-repeat center;
+    background-size: cover;
+  }
+  
+  .content ul li.info #profile-data dt#frontend span {
+    background: url('../assets/front-end.png') no-repeat center;
+    background-size: cover;
   }
 }

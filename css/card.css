@@ -6,12 +6,17 @@
 }
 
 .content ul #arrow {
-  margin: 0 40px;
+  margin: 0 40px 0 0;
   font-size: 80px;
   cursor: pointer;
+  color: #fff4;
 }
 
-.content ul li {
+.content ul #arrow.right {
+  margin: 0 0 0 40px;
+}
+
+.content ul li.card {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -39,7 +44,7 @@
 }
 
 .content ul li #profile-data {
-  height: 110px;
+  height: 150px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -52,6 +57,38 @@
 .content ul li #profile-data p {
   font-size: 17px;
   line-height: 22px;
+}
+
+.content ul li.info #profile-data {
+  width: 100%;
+  height: 100%;
+}
+
+.content ul li.info #profile-data dl {
+  flex: .75;
+  display: flex;
+  flex-direction: column;
+}
+
+.content ul li.info #profile-data img {
+  min-width: 100px;
+  display: flex;
+  margin: 0 auto;
+  width: 40%;
+}
+
+.content ul li.info #profile-data dd {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-left: 5%;
+  line-height: 40px;
+  text-align: left;
+}
+
+dt {
+  margin: 15px 0;
 }
 
 strong {

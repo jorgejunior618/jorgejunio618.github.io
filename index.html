@@ -21,7 +21,7 @@
 </head>
 <body>
   <h3 id="info-dev">ESTE SITE AINDA ESTÁ EM FASE DE DESENVOLVIMENTO</h3>
-  <p id="credits">Developed by <strong><a href="https://github.com/jorgejunior618">Jorge Júnior</a></strong></p>
+  <p id="credits">Developed by <strong><a target="_blank" href="https://github.com/jorgejunior618">Jorge Júnior</a></strong></p>
   <div class="initial-content">
     <h1>Bem Vindo à minha apresentação</h1>
   </div>
@@ -31,8 +31,8 @@
       <li class="active card">
         <img id="profile" src="./assets/myProfile.jpg" alt="Meu Perfil">
         
-        <div id="profile-data">
-          <h2>F<sup>co</sup> Jorge M. Junior</h2>
+        <section id="profile-data">
+          <h2>F<u><sup>co</sup></u> Jorge M. Júnior</h2>
 
           <div>
             <p>
@@ -40,37 +40,89 @@
               no <strong>Instituto Federal do Ceará - IFCE</strong>
             </p>
           </div>
-        </div>
+        </section>
 
         <section id="networks">
           <span>
             <a href="https://www.linkedin.com/in/fco-jorge-m-junior/" target="_blank">
-              <img src="./assets/linkedin.svg" alt="linkedin">
+              <img src="./assets/linkedin.svg" alt="Meu linkedin">
               linkedin
             </a>
           </span>
           
           <span>
             <a href="https://github.com/jorgejunior618" target="_blank">
-              <img src="./assets/github.svg" alt="github">
+              <img src="./assets/github.svg" alt="Meu github">
               github
             </a>
           </span>
           
           <span>
             <a href="https://www.instagram.com/jjunior618/" target="_blank">
-              <img src="./assets/instagram.svg" alt="instagram">
+              <img src="./assets/instagram.svg" alt="Meu instagram">
               instagram
             </a>
           </span>
         </section>
       </li>
 
-      <li class="card">Areas</li>
-      <li class="card">Curriculo</li>
-      <li class="card">Curriculo</li>
+      <li class="card info">
+        <section id="profile-data">
+          <h2>Areas de Conhecimento</h2>
 
-      <span id="arrow" class="rigth">▻</span>
+          <img src="./assets/back-end.png" alt="Back-End icon">
+
+          <dl>
+            <dt id="backend">
+              <span></span>
+              <strong>Back-End:</strong>
+            </dt>
+
+            <dd>
+              <li>Node.Js</li>
+              <li>SQL (Postgres, SQLite) básico</li>
+              <li>PHP (com foco em WordPress)</li>
+            </dd>
+          </dl>
+        </section>
+      </li>
+      
+      <li class="card info">
+        <section id="profile-data">
+          <h2>Areas de Conhecimento</h2>
+
+          <img src="./assets/front-end.png" alt="Front-End icon">
+
+          <dl>
+            <dt id="frontend">
+              <span></span>
+              <strong>Front-End:</strong>
+            </dt>
+
+            <dd>
+              <li>HTML5 e CSS<li>
+              <li>React Js</li>
+              <li>React Native</li>
+              <li>WordPress</li>
+            </dd>
+          </dl>
+        </section>
+      </li>
+      
+      <li class="card info">
+        <section id="profile-data">
+          <h2>F<u><sup>co</sup></u> Jorge M. Júnior</h2>
+
+          <div>
+            <p>
+              Estudante de <strong>Engenharia de Computação</strong><br/>
+              no <strong>Instituto Federal do Ceará - IFCE</strong>
+            </p>
+          </div>
+        </section>
+      </li>
+
+      <span id="arrow" class="right">▻</span>
     </ul>
   </main>
   <script type="module" src="./js/script.js"></script>
