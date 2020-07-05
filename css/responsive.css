@@ -41,7 +41,7 @@
   }
 }
 
-@media (max-height: 639px) {
+@media (max-height: 650px) {
   .content ul li.card {
     height: 67vh
   }
