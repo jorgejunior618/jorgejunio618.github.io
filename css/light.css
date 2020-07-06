@@ -23,12 +23,12 @@ body.light {
 }
 .light .content ul li.card {
   box-shadow: 0 0 8px #0006;
-  background-color: #dbd3f3;
+  background-color: #e0dcf3;
 }
 
 @media (max-width: 700px) {
   .light .content ul #arrow {
-    background-color: #dbd3f3;
+    background-color: #e0dcf3;
   }
 
   .light .content ul #arrow:hover {
