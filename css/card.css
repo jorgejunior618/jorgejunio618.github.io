@@ -31,6 +31,8 @@
 
   height: 90vh;
   min-height: 310px;
+  max-height: 590px;
+
   padding: 40px 20px;
   border-radius: 15px;
   box-shadow: 0 0 50px #fff6;
