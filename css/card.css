@@ -6,14 +6,17 @@
 }
 
 .content ul #arrow {
-  margin: 0 40px 0 0;
+  position: absolute;
+  left: 5vw;
   font-size: 80px;
   cursor: pointer;
   color: #fff4;
+  z-index: 9;
 }
 
 .content ul #arrow.right {
-  margin: 0 0 0 40px;
+  left: unset;
+  right: 5vw;
 }
 
 .content ul li.card {
@@ -24,17 +27,28 @@
   
   width: 85vw;
   max-width: 500px;
+  min-width: 200px;
+
   height: 90vh;
+  min-height: 310px;
   padding: 40px 20px;
   border-radius: 15px;
-  box-shadow: 0 0 20px #fff4;
-
+  box-shadow: 0 0 50px #fff6;
   background-color: #2f2f2f;
 
   opacity: 0;
-  display: none;
+  position: absolute;
 
-  transition: opacity .5s;
+  transition: opacity 1s;
+}
+
+.content ul li.card * {
+  transition: opacity 1s;
+  opacity: 0;
+}
+
+.content ul li.card.active, .content ul li.card.active * {
+  opacity: 1;
 }
 
 .content ul li img#profile {
@@ -87,12 +101,12 @@
   text-align: left;
 }
 
-dt {
+.content ul li.info #profile-data dt {
   margin: 15px 0;
 }
 
-strong {
-  font-size: 19px;
+.content ul li.info #profile-data dt strong {
+  font-size: 24px;
 }
 
 .content ul li #networks {

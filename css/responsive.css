@@ -1,9 +1,10 @@
 @media (max-width: 700px) {
   .content ul {
-    display: block;
+    align-items: unset;
+    justify-content: center;
   }
   .content ul li.card {
-    margin: 5vh auto;
+    margin: 5vh 0;
     height: 75vh;
     padding: 25px 10px;
   }
@@ -12,18 +13,11 @@
     display: block;
     font-size: 30px;
     margin: 0;
-    position: absolute;
     bottom: 50px;
-    left: 9vw;
     
     background-color: #2f2f2f;
     padding: 5px 50px;
     border-radius: 10px;
-  }
-
-  .content ul #arrow.right {
-    left: unset;
-    right: 9vw;
   }
 
   .content ul li #profile-data h2 {

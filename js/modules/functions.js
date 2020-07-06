@@ -6,11 +6,6 @@ export default {
   
     cards.forEach((card, index) => {
       if(card.classList.contains(active) && !findActive){
-        card.style.opacity = 0;
-  
-        setTimeout(() => {
-          card.style.display = 'none';
-        }, 500);
   
         card.classList.toggle(active);
   
@@ -18,21 +13,11 @@ export default {
           cards[0].classList.toggle(active);
   
           setTimeout(() => {
-            cards[0].style.display = 'flex';
-          }, 501);
-  
-          setTimeout(() => {
-            cards[0].style.opacity = 1;
           }, 550);
         } else {
           cards[index + 1].classList.toggle(active);
   
           setTimeout(() => {
-            cards[index + 1].style.display = 'flex';
-          }, 501);
-  
-          setTimeout(() => {
-            cards[index + 1].style.opacity = 1;
           }, 550);
         }
   
@@ -48,11 +33,6 @@ export default {
   
     cards.forEach((card, index) => {
       if(card.classList.contains(active) && !findActive){
-        card.style.opacity = 0;
-  
-        setTimeout(() => {
-          card.style.display = 'none';
-        }, 500);
   
         card.classList.toggle(active);
   
@@ -60,21 +40,11 @@ export default {
           cards[lastCard].classList.toggle(active);
   
           setTimeout(() => {
-            cards[lastCard].style.display = 'flex';
-          }, 501);
-  
-          setTimeout(() => {
-            cards[lastCard].style.opacity = 1;
           }, 550);
         } else {
           cards[index - 1].classList.toggle(active);
-          
-          setTimeout(() => {
-            cards[index - 1].style.display = 'flex';
-          }, 501);
   
           setTimeout(() => {
-            cards[index - 1].style.opacity = 1;
           }, 550);
         }
         findActive = true

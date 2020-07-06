@@ -1,17 +1,16 @@
 import functions from './functions.js'
-
 export default {
   mainSlider: () => {
     const [ left, right ] = document.querySelectorAll('#arrow');
     const cards = document.querySelectorAll('.content ul li.card');
+    
+    window.addEventListener('keydown', (event) => {
+      const keyPressed = event.key;
 
-    cards.forEach((card) => {
-      if (card.classList.contains('active')) {
-        card.style.display = 'flex';
-        card.style.opacity = 1;
-      }
-    })
-
+      if (keyPressed === 'ArrowLeft') functions.backward(cards);
+      if (keyPressed === 'ArrowRight') functions.forward(cards);
+    });
+    
     left.addEventListener('click', () => functions.backward(cards));
 
     right.addEventListener('click', () => functions.forward(cards));
