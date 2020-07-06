@@ -12,6 +12,13 @@
   cursor: pointer;
   color: #fff4;
   z-index: 9;
+
+  transition: all .6s;
+}
+
+.content ul #arrow:hover {
+  filter: brightness(88%);
+  box-shadow: 0 0 10px #fff6;
 }
 
 .content ul #arrow.right {
