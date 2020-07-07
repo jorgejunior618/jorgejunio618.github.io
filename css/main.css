@@ -25,28 +25,32 @@ li {
 }
 
 #theme {
-  display: flex;
-  width: 75px;
-  align-items: center;
-  justify-content: space-between;
   z-index: 3;
-
   position: absolute;
   right: 5vw;
   top: 35px;
 }
 
-#theme label {
-  font-size: 14px;
-  font-weight: bold;
-  color: #f0f0f5;
+#theme button#theme-selector {
   display: flex;
-  width: 50px;
+  align-items: center;
+  justify-content: center;
+
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  border: none;
+  
+  background-color: #565666;
+  cursor: pointer;
 }
 
-#theme input#theme-selector {
-  width: 20px;
-  height: 20px;
+#theme button#theme-selector:focus {
+  outline: none;
+}
+
+#theme button#theme-selector img {
+  width: 35px;
 }
 
 #info-dev, #credits {
@@ -63,7 +67,6 @@ li {
   left: 0;
   right: 0;
   pointer-events: none;
-  
 }
 
 #credits {

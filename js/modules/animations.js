@@ -4,12 +4,23 @@ export default {
     const presentationTitle = document.querySelector('.initial-content h1');
 
     presentation.addEventListener('click', () => {
-      presentation.classList.toggle('active');
-      
-      setTimeout(() => {
-        presentation.style.display = 'none'
-        presentationTitle.style.display = 'none'
-      }, 1000);
+      if (!presentation.classList.contains('active') && presentation.style.display !== 'none') {
+        presentation.classList.add('active');
+        setTimeout(() => {
+          presentation.style.display = 'none';
+          presentationTitle.style.display = 'none';
+        }, 1000);
+      }
     });
+
+    window.addEventListener('keypress', () => {
+      if (!presentation.classList.contains('active') && presentation.style.display !== 'none') {
+        presentation.classList.add('active');
+        setTimeout(() => {
+          presentation.style.display = 'none';
+          presentationTitle.style.display = 'none';
+        }, 1000);
+      }
+    })
   },
 }

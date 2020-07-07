@@ -1,17 +1,20 @@
-const themeSelector = document.querySelector('input');
+const themeSelector = document.querySelector('button#theme-selector');
 const body = document.querySelector('body');
 
 export default {
   themeChange: () => {
     body.classList.add('light');
-    themeSelector.addEventListener('click', (e) => {
-      const checkActivate = e.target.checked;
-
-      if (checkActivate) {
-        body.classList.remove('light');
-      } else {
-        body.classList.add('light');
-      }
+    themeSelector.addEventListener('click', () => {
+      body.classList.toggle('light');
     });
+  },
+
+  keyChangeTheme: () => {
+    const body = document.querySelector('body');
+    window.addEventListener('keypress', e => {
+      if (e.key === 'n' || e.key === 'N') {
+        body.classList.toggle('light');
+      }
+    })
   }
 }

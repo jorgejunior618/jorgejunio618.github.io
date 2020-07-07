@@ -1,4 +1,9 @@
 @media (max-width: 700px) {
+  #theme {
+    right: 5px;
+    top: 5px;
+  }
+
   .content ul {
     align-items: unset;
     justify-content: center;

@@ -4,7 +4,7 @@ export default {
     const [ left, right ] = document.querySelectorAll('#arrow');
     const cards = document.querySelectorAll('.content ul li.card');
     
-    window.addEventListener('keydown', (event) => {
+    window.addEventListener('keypress', (event) => {
       const keyPressed = event.key;
 
       if (keyPressed === 'ArrowLeft') functions.backward(cards);
