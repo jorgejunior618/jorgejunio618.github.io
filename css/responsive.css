@@ -1,15 +1,9 @@
 @media (max-width: 700px) {
-  #theme {
-    right: 5px;
-    top: 5px;
-  }
-
   .content ul {
     align-items: unset;
     justify-content: center;
   }
   .content ul li.card {
-    margin: 5vh 0;
     height: 75vh;
     padding: 25px 10px;
   }
@@ -42,8 +36,35 @@
 
 @media (max-height: 650px) {
   .content ul li.card {
+    top: 35px;
     height: 67vh
   }
+
+  .content ul #arrow {
+    display: block;
+    font-size: 30px;
+    margin: 0;
+    bottom: 50px;
+    
+    background-color: #2f2f2f;
+    padding: 5px 50px;
+    border-radius: 10px;
+  }
+  
+  #theme {
+    top: 5px;
+    right: 5px;
+    left: 5px;
+  
+    display: flex;
+    justify-content: center;
+  }
+
+  #theme button#theme-selector{
+    width: 25px;
+    height: 25px;
+  }
+
   .content ul li img#profile {
     width: 100px;
   }
