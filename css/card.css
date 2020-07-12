@@ -1,8 +1,11 @@
 .content ul {
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh; 
+  height: 95vh;
+  width: 95vw;
+  overflow-x: hidden;
 }
 
 .content ul #arrow {
@@ -11,7 +14,7 @@
   font-size: 80px;
   cursor: pointer;
   color: #fff4;
-  z-index: 9;
+  z-index: 97;
 
   transition: all .6s;
 }
@@ -45,22 +48,25 @@
   box-shadow: 0 0 25px #fff6;
   background-color: #2f2f2f;
 
-  opacity: 0;
   position: absolute;
 
-  transition: opacity 1s;
+  transition: all .5s, z-index .6s;
   z-index: 1;
+}
+#card-2 {
+  transform: rotate(5deg);
+}
+#card-3 {
+  transform: rotate(-3deg);
 }
 
 .content ul li.card * {
-  transition: opacity 1s;
-  opacity: 0;
+  transition: all .5s, z-index .6s;
   z-index: 1;
 }
 
 .content ul li.card.active, .content ul li.card.active * {
-  opacity: 1;
-  z-index: 2;
+  z-index: 95;
 }
 
 .content ul li img#profile {
