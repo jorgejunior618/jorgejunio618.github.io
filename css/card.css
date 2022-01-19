@@ -15,8 +15,6 @@
   cursor: pointer;
   color: #fff4;
   z-index: 97;
-
-  transition: all .6s;
 }
 
 .content ul #arrow:hover {
@@ -48,8 +46,6 @@
   background-color: #2f2f2f;
 
   position: absolute;
-
-  transition: all .5s, z-index .6s;
   z-index: 1;
 }
 #card-2 {
