@@ -1,83 +1,206 @@
-body {
-  background-color: #000;
-  font-family: 'Oxygen', sans-serif;
-  transition: background-color .4s, color .4s;
+* {
+  scroll-behavior: smooth;
 }
+body {
+  background-color: #2F2F2F;
+  color: #F2F2F2;
+  font-family: 'Oxygen', sans-serif;
 
+  background-color: #12232E;
+  background-image: radial-gradient(circle, #1D3442, transparent);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  transition: all .4s, z-index .5s;
+  line-height: 1.8;
 }
-
 a {
-  color: currentColor;
+  color: #F2F2F2;
+  transition-property: color;
+  transition-duration: 1.2s;
+  transition-timing-function: ease;
   text-decoration: none;
 }
-
+::-webkit-scrollbar {
+  width: 8px;
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #A2A2A2;
+  border-radius: 8px;
+}
+::-webkit-scrollbar-corner {
+  width: 0;
+  height: 0;
+}
 strong {
   font-size: 19px;
 }
-
 li {
   list-style: none;
 }
-
-#theme {
-  z-index: 98;
-  position: absolute;
-  right: 5vw;
-  top: 35px;
+h1 {
+  font-size: 46px;
 }
-
-#theme button#theme-selector {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  width: 40px;
-  height: 40px;
-  border-radius: 8px;
-  border: none;
-  
-  cursor: pointer;
-}
-
-#theme button#theme-selector:focus {
-  outline: none;
-}
-
-#theme button#theme-selector img {
-  width: 80%;
-}
-
-#info-dev, #credits {
-  color: #fff5;
-  position: absolute;
-  z-index: 100;
-}
-
-#info-dev {
-  color: #fff2;
+h2 {
   font-size: 24px;
-  text-align: center;
-  top: 5px;
-  left: 0;
-  right: 0;
-  pointer-events: none;
+  margin: 10px 0;
 }
-
-#credits {
-  bottom: 7px;
-  left: 10vw;
+h3 {
+  font-size: 20px;
+  margin: 10px 0;
 }
-
-#credits a {
-  padding: 7px 0;
+h3 {
+  font-size: 18px;
+}
+p {
+  font-size: 16px;
 }
 
 .content {
-  text-align: center;
-  color: #f0f0f5;
+  height: 100vh;
+  overflow-y: hidden;
+  margin: 0 8vw;
+  padding: 50px 90px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px
+}
+.content header {
+  height: 80vh;
+}
+.content header h2 {
+  width: 60%;
+}
+.content header p {
+  width: 45%;
+  min-width: 250px;
+}
+.content main {
+  overflow-y: scroll;
+  padding-right: 15px;
+}
+nav {
+  margin-top: 50px;
+}
+nav ul li {
+  color: #AFAFAF;
+  width: fit-content;
+  padding: 10px 0;
+  padding-left: 40px;
+  position: relative;
+  transition: padding 0.2s;
+}
+nav ul a {
+  color: #AFAFAF;
+  padding: 10px 0;
+}
+nav ul li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 25px;
+  height: 2px;
+  background-color: #AFAFAF;
+  transition: width 0.2s;
+}
+nav ul li:hover, nav ul li.active{
+  color: #2F2F2F;
+  padding-left: 65px;
+}
+nav ul li:hover, nav ul li.active {
+  color: #FFF;
+}
+nav ul li:hover::before, nav ul li.active::before {
+  background-color: #FFF;
+  width: 55px;
+}
+
+ul#redes {
+  width: 50%;
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+}
+ul#redes li {
+  margin-right: 25px;
+}
+ul#redes img {
+  width: 35px;
+}
+
+main section + section {
+  margin-top: 45px;
+}
+main section h3 {
+  padding-left: 40px;
+  position: relative;
+}
+main section h3::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 55%;
+  width: 25px;
+  height: 2px;
+  background-color: #FFF;
+}
+main section p {
+  padding-top: 14px;
+}
+
+main section dl .card {
+  display: grid;
+  grid-template-columns: 2fr 4fr;
+  gap: 6px
+}
+main section dl dt {
+  color: #AFAFAF;
+}
+main section dl dd span {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  font-weight: bold;
+  color: #AFAFAF;
+}
+
+main section .card {
+  border-radius: 6px;
+  padding: 25px 40px;
+  margin: 15px 0;
+  transition: background-color .3s;
+}
+main section .card .links {
+  display: flex;
+  margin: 15px 20px;
+}
+main section .card .links a {
+  margin-right: 20px;
+}
+main section .card:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid #FFF1;
+  padding: 24px 39px;
+}
+main section .card .tags {
+  margin: 15px 0;
+}
+main section .card .tags span {
+  font-size: 12px;
+  margin: 2px;
+  margin-bottom: 4px;
+  display: inline-block;
+  color: #0FF;
+  background-color: #0FF2;
+  padding: 6px 12px;
+  border-radius: 15px;
+  font-weight: bold;
+  width: fit-content;
 }

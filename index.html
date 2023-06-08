@@ -4,13 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Jorge Júnior - Web/Mobile Developer</title>
+  <title>Jorge Júnior - Meu Portfólio</title>
 
-  <meta name="description" content="Este é um site de divulgação pessoal, desenvolvido totalmente por mim para utiliza-lo como portifólio.">
+  <meta name="description" content="Este é um site de divulgação pessoal, desenvolvido totalmente por mim para utiliza-lo como portfólio.">
   
   <meta property="og:type" content="website"/>
-  <meta property="og:title" content="Jorge Júnior - Web/Mobile Developer"/>
-  <meta property="og:description" content="Este é um site de divulgação pessoal, desenvolvido totalmente por mim para utiliza-lo como portifólio."/>
+  <meta property="og:title" content="Jorge Júnior - Meu Portfólio"/>
+  <meta property="og:description" content="Este é um site de divulgação pessoal, desenvolvido totalmente por mim para utiliza-lo como portfólio."/>
   <meta property="og:url" content="https://jorgejunior618.github.io"/>
   <meta property="og:image" content="https://jorgejunior618.github.io/assets/og-img.jpg"/>
 
@@ -28,117 +28,184 @@
   />
 
   <link rel="stylesheet" href="./css/main.css">
-  <link rel="stylesheet" href="./css/card.css">
-  <link rel="stylesheet" href="./css/light.css">
   <link rel="stylesheet" href="./css/responsive.css">
-  
 </head>
-<body class="light">
-  
-  <div id="theme">
-    <button title="Ativar/Desativar modo noturno (N)" id="theme-selector"><img src="./assets/dark-light.svg" alt=""></button>
-  </div>
-  <p id="credits">Developed by <strong><a target="_blank" href="https://github.com/jorgejunior618">Jorge Júnior</a></strong></p>
-  
-  <!-- <h3 id="info-dev">ESTE SITE AINDA ESTÁ EM FASE DE DESENVOLVIMENTO</h3> -->
-  <main class="content">
-    <ul>
-      <span id="arrow">◅</span>
-      <li id="main" class="active card">
-        <img id="profile" src="./assets/myProfile.jpg" alt="Meu Perfil">
-        
-        <section id="profile-data">
-          <h2>F<u><sup>co</sup></u> Jorge M. Júnior</h2>
-
-          <div>
-            <p>
-              Estudante de <strong>Engenharia de Computação</strong><br/>
-              no <strong>Instituto Federal do Ceará - IFCE</strong>
-            </p>
-          </div>
-        </section>
-
-        <section id="networks">
-          <span title="Meu perfil profissional no LinkedIn">
-            <a href="https://www.linkedin.com/in/fco-jorge-m-junior/" target="_blank">
-              <img src="./assets/linkedin.svg" alt="Meu linkedin">
-              linkedin
-            </a>
-          </span>
-          
-          <span title="Meus projetos pessoais no Github">
-            <a href="https://github.com/jorgejunior618" target="_blank">
-              <img src="./assets/github.svg" alt="Meu github">
-              github
-            </a>
-          </span>
-          
-          <span title="Meu perfil pessoal no Instagram">
-            <a href="https://www.instagram.com/jjunior618/" target="_blank">
-              <img src="./assets/instagram.svg" alt="Meu instagram">
-              instagram
-            </a>
-          </span>
-        </section>
-      </li>
-
-      <li style="transform: rotate(5deg);" class="card info">
-        <section id="profile-data">
-          <h2>Areas de Conhecimento</h2>
-
-          <img src="./assets/back-end.png" alt="Back-End icon">
-
-          <dl>
-            <dt id="backend">
-              <span></span>
-              <strong>Back-End:</strong>
-            </dt>
-
-            <dd>
-              <li>Node.Js</li>
-              <li>SQL (Postgres, SQLite) básico</li>
-            </dd>
-          </dl>
-        </section>
-      </li>
+<body>
+  <section class="content">
+    <header>
+      <h1>
+        Jorge Junior
+      </h1>
+      <h2>
+        Desenvolvedor Front-end e Mobile
+      </h2>
+      <p>
+        Engenheiro de Computação em formação no Instituto Federal do Ceará (IFCE) 
+      </p>
+      <nav><ul>
+        <a href="#eu"><li class="active">Sobre mim</li></a>
+        <a href="#experiencia"><li>Experiência</li></a>
+        <!-- <a href="#projetos"><li>Projetos</li></a> -->
+      </ul></nav>
+      <ul id="redes">
+        <li><a href="https://github.com/jorgejunior618">
+          <img target="_blank" src="./assets/github.svg" alt="Meu Github"></a>
+        </li>
+        <li><a href="https://www.linkedin.com/in/fco-jorge-m-junior/">
+          <img target="_blank" src="./assets/linkedin.svg" alt="Meu LinkedIn"></a>
+        </li>
+      </ul>
+    </header>
+    <main>
+      <section id="eu">
+        <h3>Sobre mim</h3>
+        <p>
+          Desde 2019, quando entrei no curso de Engenharia de Computção, muito entusiasmado com programação, o que pra mim era um novo mundo, entrei de cabeça no mundo desenvolvimento de software, especialmente mo desenvolvimento Web e de aplicativos móveis, e até hoje sou fascinado pelos resultados dos projetos em que me arrisco.
+        </p>
+        <p>
+          Atualmente estou em busca de novos desafios, e novas experiências, manter minha vida profissional ativa, manter relações ativas com profissionais da minha área, conseguir experiências em grandes empresas e grandes times de desenvolvimento.
+        </p>
+        <p>
+          Quando não estou ocupado codando para o trabalho, ou nas horas de estudo da faculdade, é comum me encontrar ainda estudadno algo sobre a área da tecnologia (IA, hardware, etc), ou matando tempo com jogos, cinema, ou comendo.
+        </p>
+      </section>
       
-      <li style="transform: rotate(-3deg);" class="card info">
-        <section id="profile-data">
-          <h2>Areas de Conhecimento</h2>
-
-          <img src="./assets/front-end.png" alt="Front-End icon">
-
-          <dl>
-            <dt id="frontend">
-              <span></span>
-              <strong>Front-End:</strong>
-            </dt>
-
+      <section id="experiencia">
+        <h3>Experiências</h3>
+        <dl>
+          <div class="card">
+            <dt>2020 - Presente</dt>
             <dd>
-              <li>HTML5 e CSS<li>
-              <li>React Js e React Native</li>
-              <li>Flutter</li>
+              <h4>EvoluTI</h4>
+              <span>Estagiário</span>
+              <span>Desenvolvimento Web</span>
+              <p>
+                Estagiário desenvolvendo uma Aplicação Web para gerenciamento de cooperativas hospitalares. Fui encarregado de refatorar, manter e iniciar as aplicações Web dos novos projetos iniciados pela empresa, consumindo API Rest.
+              </p>
+              <p>
+                Foi um grande desafio, tamanha a responsabilidade, mas sempre procurei manter os melhores padrões de estruturação dos projeto, e recorrendo aos superiores nas dificuldades enfrentadas.
+              </p>
+              <div class="tags">
+                <span>ReactJS</span>
+                <span>Redux</span>
+                <span>Api Rest</span>
+                <span>SCSS</span>
+                <span>Ant Design</span>
+                <span>JavaScript</span>
+              </div>
             </dd>
-          </dl>
-        </section>
-      </li>
-      
-      <!-- <li class="card info">
-        <section id="profile-data">
-          <h2>F<u><sup>co</sup></u> Jorge M. Júnior</h2>
-
-          <div>
-            <p>
-              Estudante de <strong>Engenharia de Computação</strong><br/>
-              no <strong>Instituto Federal do Ceará - IFCE</strong>
-            </p>
           </div>
-        </section>
-      </li> -->
 
-      <span id="arrow" class="right">▻</span>
-    </ul>
-  </main>
+          <div class="card">
+            <dt>2022 - Presente</dt>
+            <dd>
+              <h4>EvoluTI</h4>
+              <span>Desenvolvedor Junior</span>
+              <span>Desenvolvimento Web e Mobile</span>
+              <p>
+                Efetivado na empresa em que trabalhei como estagiário. Continuei desenvolvendo as aplicações Web da empresa, e agora tambem trabalhando como dedsenvolvedor Mobile hibrido com Flutter, lançando os aplicativos tanto para Play Store quanto App Store.
+              </p>
+              <div class="tags">
+                <span>ReactJS</span>
+                <span>React-Hooks</span>
+                <span>Redux</span>
+                <span>TypeScript</span>
+                <span>Dashboard</span>
+                <span>Styled-Components</span>
+                <span>Ant Design</span>
+                <span>Flutter</span>
+                <span>Android</span>
+                <span>iOS</span>
+              </div>
+            </dd>
+          </div>
+        </dl>
+      </section>
+      
+      <!-- <section id="projetos">
+        <h3>Projetos</h3>
+        <dl>
+          <div class="card">
+            <dt>2020 - Presente</dt>
+            <dd>
+              <h4>Gcoop - Gestao de Cooperativas</h4>
+              <span>Estagiário</span>
+              <span>Desenvolvimento Web</span>
+              <p>
+                Aplicação Web para gerenciamento de cooperativas hospitalares. Fui encarregado de refatorar, manter e iniciar as aplicações Web dos novos projetos iniciados pela empresa, consumindo API Rest.
+              </p>
+              <p>
+                Foi um grande desafio, tamanha a responsabilidade, mas sempre me mantendo os melhores padrões de estruturação de projeto, e recorrendo aos superiores nas dificuldades enfrentadas.
+              </p>
+              <div class="tags">
+                <span>ReactJS</span>
+                <span>Redux</span>
+                <span>Api Rest</span>
+                <span>SCSS</span>
+                <span>Ant Design</span>
+                <span>JavaScript</span>
+              </div>
+            </dd>
+          </div>
+
+          <div class="card">
+            <dt>2021 - Presente</dt>
+            <dd>
+              <h4>Analytcs GCOOP</h4>
+              <span>Desenvolvedor Junior</span>
+              <span>Desenvolvimento Web</span>
+              <p>
+                Aplicação Web para controle das Cooperativas sobre o acesso dos cooperados ao sistema.
+              </p>
+              <p>
+                A aplicação possui um dashboard de dados com informações sobre as Lotações, contratos, cooperados, plantões realizados na Cooperativa.
+              </p>
+              <div class="tags">
+                <span>ReactJS</span>
+                <span>React-Hooks</span>
+                <span>Redux</span>
+                <span>TypeScript</span>
+                <span>Dashboard</span>
+                <span>Styled-Components</span>
+                <span>Ant Design</span>
+              </div>
+            </dd>
+          </div>
+
+          <div class="card">
+            <dt>2022 - Presente</dt>
+            <dd>
+              <h4>GCOOP Mobile</h4>
+              <span>Desenvolvedor Junior</span>
+              <span>Desenvolvimento Mobile</span>
+              <p>
+                Aplicação Mobile hibrida para acesso dos cooperados às suas operações disponiveis na Cooperativa.
+              </p>
+              <p class="links">
+                <a href="https://play.google.com/store/apps/details?id=evoluti.net.br.gcoop_app_mobile">
+                  <img src="./assets/android-icon.svg" width="35px" alt="Aplicativo na Play Store">
+                </a>
+                <a href="https://play.google.com/store/apps/details?id=evoluti.net.br.gcoop_app_mobile">
+                  <img src="./assets/apple-icon.png" width="30px" alt="Aplicativo na App Store">
+                </a>
+              </p>
+              <div class="tags">
+                <span>Flutter</span>
+                <span>Redux</span>
+                <span>React-Hooks</span>
+                <span>Api Rest</span>
+                <span>Styled-Components</span>
+                <span>TypeScript</span>
+                <span>Ant Design</span>
+                <span>Dashboard</span>
+              </div>
+            </dd>
+          </div>
+        </dl>
+      </section> -->
+    </main>
+  </section>
+
   <script type="module" src="./js/script.js"></script>
 </body>
 </html>
