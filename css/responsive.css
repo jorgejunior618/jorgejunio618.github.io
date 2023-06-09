@@ -1,119 +1,66 @@
-@media (max-width: 700px) {
-  .content ul {
-    align-items: unset;
-    justify-content: center;
-  }
-  .content ul li.card {
-    height: 75vh;
-    padding: 25px 10px;
-  }
-
-  .content ul #arrow {
-    display: block;
-    font-size: 30px;
+@media (max-width: 900px) {
+  .content {
+    height: auto;
+    overflow-y: scroll;
     margin: 0;
-    bottom: 50px;
-    
-    background-color: #2f2f2f;
-    padding: 5px 50px;
-    border-radius: 10px;
+    padding: 50px 90px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0;
   }
-
-  .content ul li #profile-data h2 {
-    font-size: 28px;
+  .content header {
+    height: auto;
   }
-
-  .content ul li #profile-data {
-    height: 200px;
+  .content header h2 {
+    width: 100%;
   }
-
-  .content ul li #profile-data div {
-    flex: 1;
+  .content header p {
+    width: 100%;
+    min-width: unset;
+  }
+  .content main {
+    padding-right: 0;
+  }
+  nav {
+    margin-top: 25px;
+  }
+  ul#redes {
+    width: 100%;
+    margin-top: 25px;
     display: flex;
     align-items: center;
+  }
+  .content header, .content main section {
+    padding-bottom: 35px;
+    margin-bottom: 35px;
+    border-bottom: 2px solid #FFF2;
+  }
+  .content main section#projetos {
+    margin-bottom: 0;
+  }
+  footer {
+    margin: 0;
+    padding: 0 90px 15px;
   }
 }
 
-@media (max-height: 650px) {
-  .content ul li.card {
-    top: 35px;
-    height: 67vh
+@media (max-width: 650px) {
+  .content {
+    padding: 35px 50px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0;
   }
-
-  .content ul #arrow {
-    display: block;
-    font-size: 30px;
-    margin: 0;
-    bottom: 50px;
-    
-    background-color: #2f2f2f;
-    padding: 5px 50px;
-    border-radius: 10px;
+  main section .card {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0;
+    border-radius: 6px;
+    padding: 25px 15px;
+    margin: 15px 0;
+    transition: background-color .3s;
   }
-  
-  #theme {
-    top: 5px;
-    right: 5px;
-    left: 5px;
-  
-    display: flex;
-    justify-content: center;
-  }
-
-  #theme button#theme-selector{
-    width: 25px;
-    height: 25px;
-  }
-
-  .content ul li img#profile {
-    width: 100px;
-  }
-
-  .content ul li #profile-data {
-    height: 120px;
-  }
-
-  .content ul li #profile-data h2 {
-    font-size: 25px;
-  }
-
-  .content ul li #profile-data p {
-    font-size: 14px;
-  }
-
-  .content ul li #profile-data strong {
-    font-size: 16px;
-  }
-
-  .content ul #arrow {
-    bottom: 45px;
-    padding: 5px 50px;
-  }
-
-  .content ul li.info #profile-data img {
-    display: none;
-  }
-
-  .content ul li.info #profile-data dt {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .content ul li.info #profile-data dt span {
-    display: flex;
-    width: 30px;
-    height: 30px;
-    margin-right: 10px;
-  }
-
-  .content ul li.info #profile-data dt#backend span {
-    background: url('../assets/back-end.png') no-repeat center;
-    background-size: cover;
-  }
-  
-  .content ul li.info #profile-data dt#frontend span {
-    background: url('../assets/front-end.png') no-repeat center;
-    background-size: cover;
+  footer {
+    padding: 0 50px 15px;
   }
 }
