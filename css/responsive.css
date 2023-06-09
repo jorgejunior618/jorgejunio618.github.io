@@ -46,7 +46,7 @@
 
 @media (max-width: 650px) {
   .content {
-    padding: 35px 50px;
+    padding: 35px;
     display: grid;
     grid-template-columns: 1fr;
     gap: 0;
@@ -61,6 +61,6 @@
     transition: background-color .3s;
   }
   footer {
-    padding: 0 50px 15px;
+    padding: 0 35px 15px;
   }
 }
