@@ -155,52 +155,64 @@ main section p {
   padding-top: 14px;
 }
 
-main section dl .card {
-  display: grid;
-  grid-template-columns: 2fr 4fr;
-  gap: 6px
-}
-main section dl dt {
+main section .card dt {
   color: #AFAFAF;
 }
-main section dl dd span {
-  display: flex;
-  flex-direction: column;
+main section .card h5 {
   font-size: 16px;
   font-weight: bold;
   color: #AFAFAF;
 }
 
 main section .card {
+  display: grid;
+  grid-template-columns: 2fr 4fr;
+  gap: 6px;
   border-radius: 6px;
-  padding: 25px 40px;
+  padding: 25px 15px;
   margin: 15px 0;
   transition: background-color .3s;
-}
-main section .card .links {
-  display: flex;
-  margin: 15px 20px;
-}
-main section .card .links a {
-  margin-right: 20px;
 }
 main section .card:hover {
   background-color: rgba(255, 255, 255, 0.05);
   border: 1px solid #FFF1;
-  padding: 24px 39px;
+  padding: 24px 14px;
 }
 main section .card .tags {
   margin: 15px 0;
 }
 main section .card .tags span {
   font-size: 12px;
-  margin: 2px;
+  margin: 3px 2px;
   margin-bottom: 4px;
   display: inline-block;
   color: #0FF;
   background-color: #0FF2;
-  padding: 6px 12px;
+  padding: 3px 12px;
   border-radius: 15px;
   font-weight: bold;
   width: fit-content;
+}
+main section#projetos .card img {
+  margin-top: 10px;
+}
+main section#projetos .card h4 {
+  font-size: 14px;
+}
+main section#projetos .card p {
+  line-height: 1.4;
+  padding: 15px 0;
+}
+
+main section#projetos .card .links {
+  display: flex;
+  padding-bottom: 0;
+  margin: 0 15px;
+}
+main section#projetos .card .links p {
+  padding-bottom: 0;
+}
+main section#projetos .card .links a {
+  margin-right: 20px;
+  padding-bottom: 0;
 }

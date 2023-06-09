@@ -12,14 +12,14 @@ mainEl.addEventListener('scroll', () => {
   if (posAtual <= posicaoexperiencia) {
     eu.className = 'active';
     experiencia.className = '';
-    // projetos.className = '';
-  } else/*  if (posAtual <= posicaoprojetos) */ {
+    projetos.className = '';
+  } else if (posAtual <= posicaoprojetos) {
     eu.className = '';
     experiencia.className = 'active';
-    // projetos.className = '';
-  }/*  else {
+    projetos.className = '';
+  } else {
     eu.className = '';
     experiencia.className = '';
     projetos.className = 'active';
-  } */
+  }
 })
