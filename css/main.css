@@ -62,10 +62,10 @@ p {
 }
 
 .content {
-  height: 100vh;
+  height: calc(100vh - 44px);
   overflow-y: hidden;
   margin: 0 8vw;
-  padding: 50px 90px;
+  padding: 50px 90px 6px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 15px
@@ -193,6 +193,9 @@ main section .card .tags span {
   font-weight: bold;
   width: fit-content;
 }
+main section#projetos .card dt{
+  margin: auto 0;
+}
 main section#projetos .card img {
   margin-top: 10px;
 }
@@ -215,4 +218,13 @@ main section#projetos .card .links p {
 main section#projetos .card .links a {
   margin-right: 20px;
   padding-bottom: 0;
+}
+
+footer {
+  padding: 0 90px;
+  margin: 15px 8vw;
+}
+footer p, footer p strong {
+  font-size: 14px;
+  line-height: 1;
 }
